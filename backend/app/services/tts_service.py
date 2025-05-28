@@ -1,14 +1,13 @@
 import requests
 import os
 
-ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
-VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
+from app.appConfig import app_config_obj
 
 
 def generate_audio(script: str) -> bytes:
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{app_config_obj.elevenlabs_voice_id}"
     headers = {
-        "xi-api-key": ELEVENLABS_API_KEY,
+        "xi-api-key": app_config_obj.elevenlabs_api_key,
         "Content-Type": "application/json",
     }
     payload = {

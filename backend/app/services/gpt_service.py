@@ -1,8 +1,10 @@
 import os
 import google.generativeai as genai
 
+from app.appConfig import app_config_obj
+
 genai.configure(
-    api_key=os.getenv("GEMINI_API_KEY") or "AIzaSyDvGuZ-SjdPDHZ4DA4s-3EuGg7N04lMY8I"
+    api_key=app_config_obj.gemini_api_key
 )
 
 

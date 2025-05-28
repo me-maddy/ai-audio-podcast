@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.podcast import podcast_router
 from fastapi.staticfiles import StaticFiles
+from app.appConfig import app_config_obj
 
 app = FastAPI()
 

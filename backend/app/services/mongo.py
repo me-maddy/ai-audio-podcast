@@ -2,8 +2,9 @@ from pymongo import MongoClient
 import os
 from uuid import uuid4
 
-MONGO_URL = os.getenv("MONGO_URL")
-client = MongoClient(MONGO_URL)
+from app.appConfig import app_config_obj
+
+client = MongoClient(app_config_obj.mongo_db_url)
 db = client["podcast_db"]
 episodes = db["episodes"]
 
