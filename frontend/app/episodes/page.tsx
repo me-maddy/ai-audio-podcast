@@ -33,7 +33,7 @@ export default function EpisodesPage() {
             <audio
               controls
               className="w-full"
-              src={`http://127.0.0.1:8000/audio/${ep.audio_file}`}
+              src={`https://ai-audio-podcast.onrender.com/audio/${ep.audio_file}`}
             ></audio>
             <p className="mt-2 text-sm text-gray-600">{ep.script}</p>
           </li>

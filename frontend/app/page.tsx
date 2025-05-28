@@ -112,7 +112,7 @@ export default function HomePage() {
           <audio
             controls
             className="w-full"
-            src={`http://127.0.0.1:8000/audio/${selectedEpisode.audio_file}`}
+            src={`https://ai-audio-podcast.onrender.com/audio/${selectedEpisode.audio_file}`}
           ></audio>
         </div>
       )}
@@ -137,7 +137,7 @@ export default function HomePage() {
             <audio
               controls
               className="w-full"
-              src={`http://127.0.0.1:8000/audio/${ep.audio_file}`}
+              src={`https://ai-audio-podcast.onrender.com/audio/${ep.audio_file}`}
             ></audio>
           </div>
         ))}
