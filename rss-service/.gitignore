@@ -4,6 +4,8 @@ env
 /venv
 ./venv
 
+./dist/
+
 dist/
 .env
 __pycache__

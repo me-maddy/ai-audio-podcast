@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import RSS from "rss";
 import { MongoClient } from "mongodb";
-import { ApplicationConfig } from "./applicationConfig.ts";
+import { ApplicationConfig } from "./applicationConfig.js";
 
 const app = express();
 const client = new MongoClient(ApplicationConfig.MONGO_URL);
